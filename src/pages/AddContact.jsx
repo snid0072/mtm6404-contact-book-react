@@ -27,7 +27,6 @@ function AddContact() {
 
     addDoc(c, { ...form })
       .then((doc) => {
-        // go to details page after adding
         navigate(`/contact/${doc.id}`)
       })
   }
